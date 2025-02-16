@@ -268,6 +268,7 @@ p{
     gap: 45px;
     padding-bottom: 30px;
     margin: 0 50px 0 50px;
+    position: relative;
 }
 .variete1,.jus{
     box-sizing: border-box;
@@ -297,8 +298,15 @@ p{
 }
 .cereal input{
     position: relative;
+    left: 10px;
+    z-index: 1;
     box-sizing: border-box;
-    display: none;
+    transform: scale(0);
+}
+.variete label{
+    position: relative;
+    right: 10px;
+    z-index: 2;
 }
 .btnc {
     box-sizing: border-box;
@@ -313,6 +321,11 @@ p{
     font-weight: bold;
     outline: #20A436;
     border: #20A436;
+}
+.cereal .variete input:checked+label,
+.cereal .variete label:has(~ :checked) i {
+    color: #20A436; 
+    transition: .2s;
 }
 /*style section3*/
 .section3{
