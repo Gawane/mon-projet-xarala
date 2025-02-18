@@ -5,6 +5,12 @@ body{
 *{
     font-family: "Roboto", serif;
 }
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: #000;
+}
 /*style de l'en-tête*/
 .header{
     display: flex;
@@ -138,6 +144,15 @@ h2{
 }
 p{
     display: inline-block;
+}
+.btnP{
+    background-color: #3AA94C;
+    padding: 20px 50px 20px 50px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: #20A436;
+    flex: 1;
+    cursor: pointer;
 }
 .sect2{
     transform: rotate(-55deg);

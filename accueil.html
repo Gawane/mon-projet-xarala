@@ -12,18 +12,18 @@
 </head>
 <body>
     <!--en-tête de la page-->
-    <header class="header">
+    <header class="header" id="header">
         <div class="item1">
             <div>
-                <img src="images/logo.png"  alt="logo">
+                <a href="#section1"><img src="images/logo.png"  alt="logo"></a>
             </div>
             <div>
                 <nav>
                     <ul class="flex-container">
-                        <li>Accueil</li>
-                        <li>Produits</li>
-                        <li>Service</li>
-                        <li>Contact</li>
+                        <li><a href="#section1">Accueil</a></li>
+                        <li><a href="#produit">Produits</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -31,7 +31,7 @@
         </div>
         <div class="item2">
             <div class="ariasearch" id="ariasearch" role="dialog" tabindex="-1">
-                <form method="get" action="" role="search" class="form">
+                <form method="get" action="accueil.html" role="search" class="form">
                     <label for="search"><i class="bi bi-search"></i></label>
                     <input type="search" name="search" id="search" placeholder="rechercher">
                 </form>
@@ -40,7 +40,7 @@
                 </button>
             </div>
             <div>
-                <i class="bi bi-cart4"></i>
+                <a href="#produit"><i class="bi bi-cart4"></i></a>
             </div>
             <div>
                 <button class="btn2">S'abonner</button>
@@ -50,13 +50,13 @@
     <!--le corps de la page-->
     <main class="main-corps">
         <!--conception section1-->
-        <section class="section1">
+        <section class="section1" id="section1">
             <div class="flex-section1">
                 <div class="sect1">
                     <h2>produits locaux</h2>
                     <h1>Transformation agroalimentaire</h1>
                     <p>Le lorem ipsum (également appelé faux-texte, lipsum, ou bolo bolo1) est, en imprimerie cydcsd dgtxx.</p>
-                    <button class="btn2">choisissez votre produit</button>
+                    <button class="btnP" id="btnP"></button>
                 </div>
                 <div class="sect2">
                     <div class="agro1"></div>
@@ -82,8 +82,8 @@
             </div>
         </section>
         <!--conception section2-->
-        <section class="section2">
-            <h1 class="produit">les produits</h1>
+        <section class="section2" id="section2">
+            <h1 class="produit" id="produit">les produits</h1>
             <div class="cereal">
                 <div class="variete1">
                     <img src="images/anta1.jpeg" alt="anta1">
@@ -289,7 +289,7 @@
             <input type="submit" id="submit" value="ENVOYER">
         </section>
         <!--conception section7-->
-        <section class="services">
+        <section class="services" id="services">
             <h1 class="service">nos services</h1>
             <div class="profil">
                 <div>
@@ -310,7 +310,7 @@
             </div>
         </section>
         <!--conception section8-->
-        <section class="contact">
+        <section class="contact" id="contact">
             <h1>Contact sn</h1>
             <form>
                 <input placeholder="Entrer votre Nom" id="nom">
